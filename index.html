@@ -4,8 +4,8 @@
 </head>
   <script>
     snapfit.add(document.getElementById('img'));
-function xx(v) {return(document.getElementById(v));}}
-snapfit.add(xx('img'));
+function xx(v) {return(document.getElementById(v));}
+
 snapfit.add(xx('img'), {level:6, bwide:1});
 
   </script>
@@ -23,8 +23,8 @@ snapfit.add(xx('img'), {level:6, bwide:1});
   <div>
 <img id="img" src="https://recranet.imgix.net/organizations/1152/2019-05-17-10-26-18/villa-xalvador-01.jpg?h=500&dpr=1&q=60&fit=crop&fm=pjpg"/>
   </div>
-    <button type="button" onclick="snapfit.admix($('img'));"> Admix </button>
-<button type="button" onclick="snapfit.solve($('img'));"> Solve </button>
+    <button type="button" onclick="snapfit.admix(xx('img'));"> Admix </button>
+<button type="button" onclick="snapfit.solve(xx('img'));"> Solve </button>
     
 </body>
 
