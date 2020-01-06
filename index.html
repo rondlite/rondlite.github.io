@@ -19,20 +19,19 @@ snapfit.add(xx('img'), {level:6, bwide:1});
   </style>
 <body>
   <div>
-    <h3>Monday Puzzle Special</h3>
-  <div>
-<img id="img" src=""/>
-  </div>
+    <h3>Monday Puzzle Special for Inspiration</h3>
+  
     
     <div style="outline: 1px solid silver"><img id="img" onload="snapfit.add(this,{callback: function() {alert('You solved the puzzle!');}, aborder:true, aimage:true, polygon:true, space:20});" src="https://recranet.imgix.net/organizations/1152/2019-05-17-10-26-18/villa-xalvador-01.jpg?h=500&dpr=1&q=60&fit=crop&fm=pjpg"   /></div>
     
     <button type="button" onclick="snapfit.admix(xx('img'));"> Mix </button>
 <button type="button" onclick="snapfit.solve(xx('img'));"> Solve </button>
     <script>
-      setTimeout(mixup,2000);
       function mixup(){
 snapfit.admix(xx('img'));
-      }
+      }   
+      setTimeout(mixup,2000);
+    </script>
 </body>
 
 </html>
